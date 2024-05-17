@@ -13,7 +13,7 @@ function Header() {
         <MenuItem title="home" address="/" Icon={AiFillHome} />
         <MenuItem title="about" address="/about" Icon={BsFillInfoCircleFill} />
       </div>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-5">
         <DarkModeBtn />
         <Link href="/" className="flex gap-1 items-center">
           <BiCameraMovie className="text-4xl hidden sm:inline" />

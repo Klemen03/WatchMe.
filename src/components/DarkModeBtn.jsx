@@ -12,12 +12,12 @@ function DarkModeBtn() {
     <div>
       {currentTheme === 'dark' ? (
         <MdLightMode
-          className="text-xl cursor-pointer hover:text-amber-500"
+          className="text-3xl cursor-pointer hover:text-amber-500"
           onClick={() => setTheme('light')}
         />
       ) : (
         <MdDarkMode
-          className="text-xl cursor-pointer hover:text-amber-500"
+          className="text-3xl cursor-pointer hover:text-amber-500"
           onClick={() => setTheme('dark')}
         />
       )}
