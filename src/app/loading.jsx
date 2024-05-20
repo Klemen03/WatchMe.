@@ -4,7 +4,7 @@ import Image from 'next/image';
 function loading() {
   return (
     <div className="flex justify-center">
-      <Image src="spinner.svg" alt="spinner" />
+      <Image src="spinner.svg" alt="spinner" width={150} height={150} />
     </div>
   );
 }
