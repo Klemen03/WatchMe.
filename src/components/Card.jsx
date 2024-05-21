@@ -18,12 +18,16 @@ function Card({ result }) {
         />
         <div className="p-2">
           <p className="line-clamp-2 text-md">{result.overview}</p>
-          <h2 className="text-lg font-bold truncate">
+          <h2 className="text-lg font-bold truncate py-2 text-amber-500">
             {result.title || result.name}
           </h2>
           <p className="flex items-center">
             {result.release_date || result.first_air_date}
-            <LuThumbsUp className="h-5 mr-1 ml-5" />
+            <LuThumbsUp
+              className="h-5 mr-1 ml-5"
+              fill="green"
+              color="lightgreen"
+            />
             {result.vote_count}
           </p>
         </div>
