@@ -11,13 +11,13 @@ export default async function Home({ searchParams }) {
       genre === 'fetchTopRated' ? `/movie/top_rated` : `/trending/all/week`
     }?api_key=${API_KEY}&language=en-US&page:1`
   );
+  // console.log(res);
   const data = await res.json();
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch data');
-  }
-  const results = data.results;
-  // console.log(results);
+  // if (!res.ok) {
+  //   throw new Error('Failed to fetch data');
+  // }
+  const results = data.results ? data.results : [];
 
   return (
     <div>
