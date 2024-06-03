@@ -1,7 +1,7 @@
 const API_KEY = process.env.API_KEY;
 
 import Results from '@/components/Results';
-import React, { Suspense } from 'react';
+import React from 'react';
 
 export default async function Home({ searchParams }) {
   const genre = searchParams.genre || 'fetchTrending';
@@ -19,9 +19,5 @@ export default async function Home({ searchParams }) {
   // }
   const results = data.results ? data.results : [];
 
-  return (
-    <Suspense>
-      <Results results={results} />
-    </Suspense>
-  );
+  return <Results results={results} />;
 }
